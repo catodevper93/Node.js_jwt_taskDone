@@ -1,0 +1,49 @@
+
+{{!-- la propiedad name llevará el mismo nombre de la propiedad de nuestro modelo
+para atacar y dar valor a ese campo  --}}
+
+
+<div class="container">
+  <div class="row">
+
+    <!--FORM-->
+    <div class="col-md-5 offset-md-3">
+      <div class="card card_custom">
+        <div class="card-body">
+            
+          <h1>Update Task</h1>
+
+          <form action="/edited-task/{{tarea._id}}" method="post">
+            <div class="mb-3">
+
+              <input
+                class="form-control"
+                type="text"
+                name="titulo"
+                placeholder="Title"
+                value="{{tarea.titulo}}"
+              />
+            </div>
+
+
+            <div class="mb-3">
+
+              <textarea
+                class="form-control text_area_custom"
+                name="descripcion"
+                rows="3"
+                placeholder="Add a Description"
+              >{{tarea.descripcion}}</textarea>
+
+            </div>
+
+            <button class="btn btn-success" type="submit">Update</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,12 @@
+
+
+.card_custom{
+    background: gray;
+    border: 1px solid black;
+}
+
+
+.text_area_custom{
+    height: 200px;
+    resize:none;
+}
